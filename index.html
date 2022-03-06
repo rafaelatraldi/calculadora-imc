@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
     <title>Calculadora IMC</title>
 </head>
 <body>
@@ -17,17 +20,19 @@
             </div>
         <div class="input">
             <label>Altura: </label>
-            <input type="number"  id="altura">
+            <input type="number" data-mask="0.00"  id="altura">
         </div>
         <div class="input">
-            <label>Peso: </label>
+            <label>Peso(kg): </label>
             <input type="number" id="peso">
         </div>
-        <button id="calcular"> Calcular</button>
+        <button id="calcular">Calcular</button>
 
         <div class="result" id="resultado"></div>
     </div>
     </main>  
 </body>
 <script src="imc.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
 </html>
