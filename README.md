@@ -1,2 +1,2 @@
 # calculadora-imc
-calculadora IMC em javascript
+calculadora simples de IMC em javascript
